@@ -1,0 +1,5 @@
+Null: This is what is used to show no value #
+nullpntr: 
+		a. this shows no value for a pointer
+		b. Now I'm testing the newline #
+switch: The name of a statement that has an int as a parameter and the paramter is checked against many statement like many if statements #

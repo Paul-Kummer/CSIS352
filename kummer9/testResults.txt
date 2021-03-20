@@ -1,0 +1,15 @@
+1+2  Expected: 3, Actual: 3
+1+2*3 Expected: 7, Actual: 7
+1*2+3 Expected: 5, Actual: 5
+(1+2)*3 Expected: 9, Actual: 9
+(1-2)*(3+4) Expected: -7, Actual: -7
+(1+2)*(3-4/5)+6 Expected: 12.6, Actual: 12.6
+2^2^3 Expected: 256, Actual: 256
+(((1-1)*10)+1) Expected: 1, Actual: 1
+(1+(10*(1-1))) Expected: 1, Actual: 1
+(2^2)^(2-1) Expected: 4, Actual: 4
+1       +         2          *           3 Expected: Error/7, Actual: 7
+-1        +          -2               *-3 Expected: Error/5, Actual: 5
+-1--2--2 Expected: Error/3, Actual: 3
+-1++-2--3 Expected: Error, Actual: Error
+5*(4*(3*2)+1) Expected: 125, Actual: 125
