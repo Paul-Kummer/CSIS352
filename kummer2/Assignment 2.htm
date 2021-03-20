@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for HTML5 for Balthisar Tidy on macOS, version 5.7.28">
+    <meta http-equiv="Content-Type" content=
+    "text/html; charset=utf-8">
+    <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+    <meta name="Author" content="Dan Brekke">
+    <title>
+      CSIS 252 Assignment #2
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <p>
+      <b>CSIS 352 - Spring 2021</b><br>
+      <b>Assignment #2</b><br>
+      <b>Due As Specified on the D2L Assignment Folder's Due
+      Date</b>
+    </p>Write a C++ program that will implement and test a
+    doubly-linked, doubly-ended queue.<br>
+    <p>
+      A doubly-ended queue (sometimes called deque for Doubly-Ended
+      QUEue, pronounced "deck") supports the following operations:
+    </p>
+    <ul>
+      <li>front (returns the front element)<br>
+      </li>
+      <li>back (returns the back element)<br>
+      </li>
+      <li>push_front (puts something in front of the front element,
+      which becomes the new front)
+      </li>
+      <li>push_back (puts something in back of the back element,
+      which becomes the new back)
+      </li>
+      <li>pop_front (removes the front element - the "next" element
+      becomes the new front)<br>
+      </li>
+      <li>pop_back (removes the back element - the "previous"
+      element becomes the new back)<br>
+      </li>
+      <li>empty (returns a boolean if it is empty or not)
+      </li>
+    </ul>
+    <p>
+      You may assume that the deque is not empty for all of the
+      above methods, except for empty(), in which you need to
+      actually figure out and return if it is empty or not.<br>
+    </p>
+    <p>
+      You will have your implementation of a deque be a templated
+      class, complete with a constructor and destructor. For
+      debugging purposes, I highly recommend an overloaded
+      assignment operator and a copy constructor _or_ a dump method
+      that outputs everything.<br>
+    </p>
+    <p>
+      Similar to the binary search tree being used to implement a
+      set in the videos linked from from Module 1, you will want
+      to<br>
+    </p>
+    <ul>
+      <li>have a node struct (you may want to rename it to
+      something else, like deque_node or similar) that has the
+      appropriate next and previous links in it, which you will
+      update and access as you do what you do
+      </li>
+      <li>have your templated class (a reasonable name for it would
+      be deque) that has pointers to the front and back nodes in
+      the deque. Note that these might be the same (if there's only
+      one element in the deque) or they might be both NULL (if the
+      deque is empty).<br>
+      </li>
+    </ul>
+    <p>
+      You will want to have your main function test out all of
+      those operations - including constructor and destructor. It
+      should output what it is doing along the way, to help with
+      debugging and to help show that your code works.<br>
+    </p>
+    <p>
+      Your program should have at least one of the values that is
+      put into the deque be something that is read in from input,
+      and at least one of the values that is retrieved from the
+      deque be something that is output to the screen.
+    </p>This must be a linked implementation using pointers.
+    Implementations that use arrays will be left ungraded.<br>
+    <br>
+    Test your program in parts. I recommend first the constructor,
+    then pushing stuff on, and then various combinations of
+    accessing the front, back, popping, pushing, and so on,
+    checking empty all along the way, until at the end you pop
+    everything off and empty is true.<br>
+    <p>
+      Be sure to follow the requirements in the Documentation
+      Requirements handout including a good
+      <em><strong>README</strong></em> file.<br>
+    </p>
+    <p>
+      I expect that you'll have a working makefile, with the
+      following doing as you would expect:<br>
+      <br>
+    </p>
+    <ul>
+      <li>make
+      </li>
+      <li>make clean
+      </li>
+      <li>make test<br>
+      </li>
+    </ul>
+    <p>
+      <b>RE-READ</b> this assignment sheet before you turn your
+      program in to make sure you are doing everything as
+      described. When your program has been thoroughly tested, hand
+      it in to D2L.
+    </p>
+  </body>
+</html>
